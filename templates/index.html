@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script language="javascript" type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<script language="javascript" type="text/javascript" src="js/lrtk.js"></script>
+<title>首页</title>
+<script type="text/javascript">
+	function showtime(){
+		d=new Date();
+		/*t=document.getElementsByName("mytime"); 
+		t[0].value=d.toLocaleString();    */
+		t=document.getElementById("mytime1");
+		t.innerHTML=d.toLocaleString();
+		x=setTimeout("showtime()",1000);
+	}
+	function stoptime(){
+		clearTimeout(x);
+	}
+</script>
+	
+<style type="text/css">
+a:hover img{filter:alpha(Opacity=70);-moz-opacity:0.7;opacity: 0.7;} 
+</style>
+	
+</head>
+<body onload="showtime()">
+
+<div class="top">
+  <div class="header cl">
+    <div style="position:relative; float:left">
+    <h1 id="mytime1" ></h1>
+    </div>
+    <div class="logo" >
+    <img src="images/logo.png"/>
+    
+    </div>
+    <ul id="nav" class="nav">
+    <li class="mainlevel"><a class="hover">首页</a></li>
+    <li class="mainlevel"><a href="index-01.html">简介</a></li>
+    <li class="mainlevel" id="mainlevel_01"><a>文物藏品</a>
+    <ul class="sub_nav_01">
+      <li><a href="index-02-01.html">一级文物</a></li>
+      <li><a href="index-02-02.html">二级文物</a></li>
+      <li><a href="index-02-03.html">三级文物</a></li>
+      </ul>
+    </li>
+        
+    <li class="mainlevel" id="mainlevel_02"><a>文物史迹</a>
+    <ul class="sub_nav_01">
+      <li><a href="index-03-01.html">国家重点</a></li>
+      <li><a href="index-03-02.html">省重点</a></li>
+      <li><a href="index-03-03.html">县重点</a></li>
+      </ul>
+    </li>
+    
+    <li class="mainlevel"><a href="index-04.html">我要留言</a>
+    </li>
+</ul>
+  </div>
+</div>
+<div class="main">
+ <div class="banner"></div>
+ <div class="cont">
+   <div class="cont-main">
+     
+     <div class="mould cl" style="margin-bottom:11px">
+     <h1>文物档案</h1>
+     <a href="index-01.html"><img src="images/index_03.png" alt=""/></a><a href="index-01.html"><img src="images/index_04.png" class="mar"/></a>
+<p class="h1-p">　　文物是人类在社会活动中遗留下来的具有历史、艺术、科学价值的遗物和遗迹。它是人类宝贵的历史文化遗产。
+文物是指具体的物质遗存，它的基本特征是：第一，必须是由人类创造的，或者是与人类活动有关的；第二，必须是已经成为历史的过去，不可能再重新创造的。目前，各个国家对文物的称谓并不一致，其所指涵义和范围也不尽相同，因而迄今尚未形成一个对文物共同确认的统一定义。　　　　
+		 </p>
+     </div>
+     
+     <h2 style="color:#000">文物藏品</h2>
+     <div class="mould cl" >
+       <div class="add"><a href="index-02-01.html"><img src="images/index_07.png"/></a>
+         <p class="h2-p"><b>寿司</b>东汉末年，战乱四起，百姓流离失所，为了逃荒，方便携带发明了寿司.
+         </p>
+       </div>
+       <div class="add"><a href="index-02-02.html"><img src="images/index_08.png"/></a>
+         <p class="h2-p"><b>cupcake</b>和精致仿佛的法式甜点相比，Cupcake充满着美国式的气氛，简单，自由，充满快乐。</p>
+       </div>
+       <div class="add" style="margin-right:0"><a href="index-02-03.html"><img src="images/index_09.png"/></a>
+         <p class="h2-p"><b>面包</b>面包，也写作麺包，是一种用五谷（一般是麦类）磨粉制作并加热而制成的食品。</p>
+       </div>
+
+     </div>
+     
+     <h2>美食指南</h2>
+     <div class="mould cl" style="margin-bottom:60px">
+       <div class="add"><a href="index-03-01.html"><img src="images/index_11.png"/></a>
+         <p class="h3-p">曲奇饼干
+         </p>
+       </div>
+       <div class="add"><a href="index-03-02.html"><img src="images/index_12.png"/></a>
+         <p class="h3-p">马卡龙</p>
+       </div>
+       <div class="add" style="margin-right:0"><a href="index-03-03.html"><img src="images/index_13.png"/></a>
+         <p class="h3-p">意大利面</p>
+       </div>
+
+     </div>
+   </div>
+  
+ </div>
+</div>
+<div class="footer-bottom">
+ <div class="footer">欢迎来到美食的天地</div>
+</div>
+	</body>
+</html>

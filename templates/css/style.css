@@ -1,0 +1,74 @@
+﻿@charset "utf-8";
+/* CSS Document */
+h1,h2,h3{font-weight:normal}
+*{padding:0; margin:0; list-style-type:none; font-family:"微软雅黑"; font-size:14px}
+img{border:none}   
+#mytime1{position:absolute; top:5px; left:250px; color:#FFFFFF; font-size:14px; width:200px; height:50px}
+a{text-decoration:none}  
+.cl{clear:both; overflow:hidden}
+.img{border:none}
+.top{background: #3e3e3e; height:70px}
+.header{ width:990px; margin:0 auto; height:70px}
+.logo{  height:70px; float:left}
+.nav{float:right; width:550px} 
+.nav li{float:left; width:110px; line-height:70px; text-align:center}
+.nav li a{display:block; width:110px; line-height:70px;height:70px; color:#FFFFFF; font-size:14px}
+.nav li .hover{background:#000;color:#FF0}
+.nav li a:hover{background:#000; color:#FF0}
+.main{background:url(../images/banner.jpg) no-repeat top center}
+.banner{height:400px; margin:0 auto}
+.cont{width:990px; margin:0 auto; background: url(../images/bj.png) no-repeat; min-height:1050px}
+h1{text-align:center; font-size:20px; color:#FFFFFF; line-height:60px; height:60px; }
+h2{text-align:center; font-size:20px; color:#fff; line-height:60px; height:60px; } 
+h3{text-align:center; font-size:20px; color:#666; line-height:60px; height:60px; }
+h4{text-align:center; font-size:20px; color:#666; line-height:60px; height:60px; }
+
+.mould img{ float:left}
+.mould .mar{margin-right:0}
+.mould .h1-p{color:#FFFFFF; margin-bottom:10px}
+.mould .h2-p{color:#666}
+.mould .h2-p b{display:block; font-size:16px; text-align:center; margin-bottom:10px}
+.mould .h3-p{color:#fff; text-align:center}
+.mould .add{width:330px; float:left;}
+.mould .add p{font-size:13px}
+.mould .add em a{color:#093}
+.mould p{padding:15px 20px; color:#FFFFFF; display:block; clear:both; overflow:hidden; line-height:22px}
+.mould p em{font-style:normal; font-weight:bold;}
+.mould p em a{color:#FFFFCC}
+
+.jing{width:990px; margin:0 auto; background:#f2f3f2; padding-bottom:20px}
+
+.other-p{line-height:30px; font-size:15px;  text-indent:28px; padding:15px; color:#666666}
+.other-p b{display:block; font-size:16px}
+.jing-cont h2{font-size:18px; }
+
+.longyou-main{background:url(../images/longyou.jpg) no-repeat top center}
+.longyou-main .banner{height:400px; margin:0 auto}
+.longyou-main .cont{width:990px; margin:0 auto; background: url(../images/bj.png) no-repeat center -500px; height:1050px; }
+
+.mei-cont{ clear:both; overflow:hidden; margin-bottom:50px}
+.mei-cont p{text-align:center; font-size:16px; padding:10px 0}
+.mei-p{line-height:28px; padding:0 20px; float:left;  width:600px}
+.mei-img{float:left; margin-left:20px}
+
+.liu-cont{padding:30px }
+.liu{width:940px; text-align:left; margin-bottom:60px}
+.liu li{list-style-type:none; margin-top:20px; }
+.liu li label{ line-height:30px; color:#666666}
+.liu .text{width:300px; height:30px; border:1px solid #2a7741; margin-right:20px; border-radius:5px; color:#666}
+.liu .text2{width:840px; height:40px;border:1px solid #2a7741;margin-right:20px;  border-radius:5px;color:#666}
+.liu .tar{width:880px; border:1px solid #2a7741;border-radius:5px; overflow: hidden; height:120px}
+.liu .btn{width:200px; height:35px; background: #063; border:none; cursor:pointer; color:#FFFFFF; font-size:14px}
+.foot{width:247px; float:left; margin-right:1px}
+.mould .foot-p{text-align:center; color:#666666}
+
+.footer{padding:30px 0; text-align:center; color:#FFFFFF}
+.footer-bottom{background:#323a45}
+
+.mainlevel {float:left;  text-align:center; display:block; width:140px; height:90px; line-height:90px; font-size:16px; color:#FFFFFF}
+.mainlevel a { text-decoration:none; height:90px; line-height:90px; text-align:center; text-align:center; width:140px; display:block; font-size:16px; color:#fff }
+.mainlevel ul {position:absolute; display:none; width:140px/*IE is great need, width>=li.length*/}
+.mainlevel li {  background:#3f240e; width:110px; line-height:50px}
+.mainlevel li a { line-height:50px; height:50px; font-size:14px;display:block; _padding-bottom:6px;/*IE6 only*/}
+.mainlevel li a:hover {color:#fff; text-decoration:none;}
+.Triangle_con {height:9px; background:url(../images/bird.png) 36px 0 no-repeat; display:block; _margin-bottom:-6px;/*IE6 only*/}

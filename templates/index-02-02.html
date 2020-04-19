@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script language="javascript" type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<script language="javascript" type="text/javascript" src="js/lrtk.js"></script>
+<title>美食</title>
+<script type="text/javascript">
+	function showtime(){
+		d=new Date();
+		/*t=document.getElementsByName("mytime");
+		t[0].value=d.toLocaleString();    */
+		t=document.getElementById("mytime1");
+		t.innerHTML=d.toLocaleString();
+		x=setTimeout("showtime()",1000);
+	}
+	function stoptime(){
+		clearTimeout(x);
+	}
+</script>
+</head>
+<body onload="showtime()">
+<div class="top">
+  <div class="header cl">
+    <div style="position:relative; float:left">
+    <h1 id="mytime1" ></h1></div>
+    <div class="logo"><img src="images/logo.png"/></div>
+    <ul id="nav" class="nav">
+    <li class="mainlevel"><a href="index.html">首页</a></li>
+      <li class="mainlevel"><a class="hover" href="index-01.html">简介</a></li>
+    <li class="mainlevel" id="mainlevel_01"><a>文物藏品</a>
+    <ul class="sub_nav_01">
+      <li><a href="index-02-01.html">一级文物</a></li>
+      <li><a href="index-02-02.html">二级文物</a></li>
+      <li><a href="index-02-03.html">三级文物</a></li>
+      </ul>
+    </li>
+        
+    <li class="mainlevel" id="mainlevel_02"><a>文物史迹</a>
+    <ul class="sub_nav_01">
+      <li><a href="index-03-01.html">国家重点</a></li>
+      <li><a href="index-03-02.html">省重点</a></li>
+      <li><a href="index-03-03.html">县重点</a></li>
+      </ul>
+    </li>
+    
+    <li class="mainlevel"><a href="index-04.html">我要留言</a>
+    </li>
+</ul>
+  </div>
+</div>
+ <div class="jing">
+   <div class="jing-cont">
+   <h4 style="color:#000">cupcake</h4>
+   <img src="images/h2-img03-img.jpg"/>
+   <p class="other-p"><b>文化背景</b>　和精致仿佛的法式甜点相比，Cupcake充满着美国式的气氛，简单，自由，充满快乐。Cupcake是美国人生
+活的一部分，也是最容易操作的甜点。主妇从烤箱里端出新鲜热辣的蛋糕，小孩子等不及放凉，就一边烫着手一边偷吃了。长大后，Cupcake变成送给朋友的礼物，给自己的安慰，称呼爱人的昵称，甚至金融危机来袭，还可以笑着自嘲说：至少我还买得起Cupcake。</p> 
+<p style="margin-left:20px;"><img src="images/s02.jpeg" width="940" height="623" /></p>
+    
+ </div>
+</div>
+<div class="footer-bottom">
+ <div class="footer">欢迎来到美食的天地</div>
+</div>
+		</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script language="javascript" type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<script language="javascript" type="text/javascript" src="js/lrtk.js"></script>
+<title>特色美食</title>
+<script type="text/javascript">
+	function showtime(){
+		d=new Date();
+		/*t=document.getElementsByName("mytime");
+		t[0].value=d.toLocaleString();    */
+		t=document.getElementById("mytime1");
+		t.innerHTML=d.toLocaleString();
+		x=setTimeout("showtime()",1000);
+	}
+	function stoptime(){
+		clearTimeout(x);
+	}
+</script>
+</head>
+<body onload="showtime()">
+<div class="top">
+  <div class="header cl">
+    <div style="position:relative; float:left">
+    <h1 id="mytime1" ></h1></div>
+    <div class="logo"><img src="images/logo.png"/></div>
+    <ul id="nav" class="nav">
+    <li class="mainlevel"><a href="index.html">首页</a></li>
+    <li class="mainlevel"><a class="hover" href="index-01.html">简介</a></li>
+    <li class="mainlevel" id="mainlevel_01"><a>文物藏品</a>
+    <ul class="sub_nav_01">
+      <li><a href="index-02-01.html">一级文物</a></li>
+      <li><a href="index-02-02.html">二级文物</a></li>
+      <li><a href="index-02-03.html">三级文物</a></li>
+      </ul>
+    </li>
+        
+    <li class="mainlevel" id="mainlevel_02"><a>文物史迹</a>
+    <ul class="sub_nav_01">
+      <li><a href="index-03-01.html">国家重点</a></li>
+      <li><a href="index-03-02.html">省重点</a></li>
+      <li><a href="index-03-03.html">县重点</a></li>
+      </ul>
+    </li>
+    
+    <li class="mainlevel"><a href="index-04.html">我要留言</a>
+    </li>
+</ul>
+
+  </div>
+</div>
+ 
+ <div class="jing">
+   <div class="jing-cont cl">
+   <div style="margin-bottom:20px"><img src="images/mei2.jpg"/></div>
+   <div class="mei-cont">
+     <div class="mei-img"><img src="images/index_13.png" /><p><strong>意大利面</strong></p></div>
+     <div class="mei-p">意大利面，也被称为意粉，是西餐正餐中最接近中国人饮食习惯的面点。意大利面条有很多种类，每种都有自己的名称，长短有差，其空心的种类被部分汉语使用者称为通心粉。<br />
+     关于意大利面条的起源，有说是源自古罗马，也有的说是由马可·波罗从中国经由西西里岛传至整个欧洲的讲法。 作为意大利面的法定原料，杜兰小麦是最硬质的小麦品种，具有高密度、高蛋白质、高筋度等特点，其制成的意大利面通体呈黄色，耐煮、口感好。<br />
+意大利面根据种类形状也各不相同，除了中国人认为是面条的的直身粉外还有螺丝型的、弯管型的、蝴蝶型的、空心型，贝壳型的林林总总数百种。<br />
+<p style="margin-left:20px;"><img src="images/s06.jpg" width="585" height="573" /></p>
+     </div>
+     </div>
+   
+   </div>
+</div>
+<div class="footer-bottom">s
+ <div class="footer">欢迎来到美食的天地</div>
+</div>
+		</body>
+</html>

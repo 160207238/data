@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script language="javascript" type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<script language="javascript" type="text/javascript" src="js/lrtk.js"></script>
+<title>我要留言</title>
+<script type="text/javascript">
+	function showtime(){
+		d=new Date();
+		/*t=document.getElementsByName("mytime");
+		t[0].value=d.toLocaleString();    */
+		t=document.getElementById("mytime1");
+		t.innerHTML=d.toLocaleString();
+		x=setTimeout("showtime()",1000);
+	}
+	function stoptime(){
+		clearTimeout(x);
+	}
+</script>
+</head>
+<body onload="showtime()">
+<div class="top">
+  <div class="header cl">
+    <div style="position:relative; float:left">
+    <h1 id="mytime1" ></h1>
+    </div>
+    <div class="logo"><img src="images/logo.png"/></div>
+    <ul id="nav" class="nav">
+    <li class="mainlevel"><a href="index.html">首页</a></li>
+    <li class="mainlevel"><a href="index-01.html">美食简介</a></li>
+    <li class="mainlevel" id="mainlevel_01"><a>喜欢的美食</a>
+    <ul class="sub_nav_01">
+      <li><a href="index-02-01.html">寿司</a></li>
+      <li><a href="index-02-02.html">cupcake</a></li>
+      <li><a href="index-02-03.html">面包</a></li>
+      </ul>
+    </li>
+        
+    <li class="mainlevel" id="mainlevel_02"><a>美食指南</a>
+    <ul class="sub_nav_01">
+      <li><a href="index-03-01.html">曲奇饼干</a></li>
+      <li><a href="index-03-02.html">马卡龙</a></li>
+      <li><a href="index-03-03.html">意大利面</a></li>
+      </ul>
+    </li>
+    
+    <li class="mainlevel"><a class="hover" href="index-04.html">我要留言</a>
+    </li>
+</ul>
+  </div>
+</div>
+ <div class="jing">
+ <div style="margin-bottom:20px"><img src="images/liu.jpg"/></div>
+   <div class="jing-cont">
+   <h4>我要留言</h4>
+   <div class="liu-cont">
+    <div class="liu">
+      <form action="" method="get">
+        <ul>
+          <li><label>昵称：</label><input name="" type="text" / class="text"><label>性别：</label>
+            <input type="radio" name="radio" id="radio"value="radio" />
+              <label for="radio">男</label>
+
+              <input type="radio" name="radio2" id="radio2" value="radio2" />
+              <label for="radio2">女</label></li>
+          <li><label>标题：</label><input name="" type="text" class="text2" /></li>
+          <li>
+           
+              <label for="textarea" style="display:block">内容：</label>
+              <textarea name="textarea" id="textarea" cols="45" rows="5" class="tar"></textarea>
+          </li>
+          <li><input name="" type="button" value="发 送" class="btn" /></li>
+        </ul></form>
+      </div>
+   </div>
+   </div>
+ </div>
+   <div class="footer-bottom">
+ <div class="footer">欢迎来到美食的天地</div>
+</div>
+		</body>
+</html>

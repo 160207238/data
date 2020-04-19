@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script language="javascript" type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<script language="javascript" type="text/javascript" src="js/lrtk.js"></script>
+<title>美食</title>
+<script type="text/javascript">
+	function showtime(){
+		d=new Date();
+		/*t=document.getElementsByName("mytime");
+		t[0].value=d.toLocaleString();    */
+		t=document.getElementById("mytime1");
+		t.innerHTML=d.toLocaleString();
+		x=setTimeout("showtime()",1000);
+	}
+	function stoptime(){
+		clearTimeout(x);
+	}
+</script>
+</head>
+<body onload="showtime()">
+<div class="top">
+  <div class="header cl">
+    <div style="position:relative; float:left">
+    <h1 id="mytime1" ></h1></div>
+    <div class="logo"><img src="images/logo.png"/></div>
+    <ul id="nav" class="nav">
+    <li class="mainlevel"><a href="index.html">首页</a></li>
+       <li class="mainlevel"><a class="hover" href="index-01.html">简介</a></li>
+    <li class="mainlevel" id="mainlevel_01"><a>文物藏品</a>
+    <ul class="sub_nav_01">
+      <li><a href="index-02-01.html">一级文物</a></li>
+      <li><a href="index-02-02.html">二级文物</a></li>
+      <li><a href="index-02-03.html">三级文物</a></li>
+      </ul>
+    </li>
+        
+    <li class="mainlevel" id="mainlevel_02"><a>文物史迹</a>
+    <ul class="sub_nav_01">
+      <li><a href="index-03-01.html">国家重点</a></li>
+      <li><a href="index-03-02.html">省重点</a></li>
+      <li><a href="index-03-03.html">县重点</a></li>
+      </ul>
+    </li>
+    
+    <li class="mainlevel"><a href="index-04.html">我要留言</a>
+    </li>
+</ul>
+  </div>
+</div>
+ <div class="jing">
+   <div class="jing-cont">
+   <h4 style="color:#000">面包</h4>
+   <img src="images/h2-img02-img.jpg"/>
+   <p class="other-p"><b>简介</b>　面包，也写作麺包，是一种用五谷（一般是麦类）磨粉制作并加热而制成的食品。以小麦粉为主要原料，以酵母、鸡蛋、油脂、糖、盐等为辅料，加水调制成面团，经过发酵、分割、成形、醒发、焙烤、冷却等过程加工而成的焙烤食品。</p> 
+<p style="margin-left:20px;"><img src="images/s03.jpg" width="600" height="390" /></p>
+
+     
+    
+ </div>
+</div>
+<div class="footer-bottom">
+ <div class="footer">欢迎来到美食的天地</div>
+</div>
+		</body>
+</html>
+	

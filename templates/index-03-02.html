@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script language="javascript" type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<script language="javascript" type="text/javascript" src="js/lrtk.js"></script>
+<title>特色美食</title>
+<script type="text/javascript">
+	function showtime(){
+		d=new Date();
+		/*t=document.getElementsByName("mytime");
+		t[0].value=d.toLocaleString();    */
+		t=document.getElementById("mytime1");
+		t.innerHTML=d.toLocaleString();
+		x=setTimeout("showtime()",1000);
+	}
+	function stoptime(){
+		clearTimeout(x);
+	}
+</script>
+</head>
+<body onload="showtime()">
+<div class="top">
+  <div class="header cl">
+    <div style="position:relative; float:left">
+    <h1 id="mytime1" ></h1></div>
+    <div class="logo"><img src="images/logo.png"/></div>
+    <ul id="nav" class="nav">
+    <li class="mainlevel"><a href="index.html">首页</a></li>
+    <li class="mainlevel"><a class="hover" href="index-01.html">简介</a></li>
+    <li class="mainlevel" id="mainlevel_01"><a>文物藏品</a>
+    <ul class="sub_nav_01">
+      <li><a href="index-02-01.html">一级文物</a></li>
+      <li><a href="index-02-02.html">二级文物</a></li>
+      <li><a href="index-02-03.html">三级文物</a></li>
+      </ul>
+    </li>
+        
+    <li class="mainlevel" id="mainlevel_02"><a>文物史迹</a>
+    <ul class="sub_nav_01">
+      <li><a href="index-03-01.html">国家重点</a></li>
+      <li><a href="index-03-02.html">省重点</a></li>
+      <li><a href="index-03-03.html">县重点</a></li>
+      </ul>
+    </li>
+    <li class="mainlevel"><a href="index-04.html">我要留言</a>
+    </li>
+</ul>
+
+  </div>
+</div>
+ 
+ <div class="jing">
+   <div class="jing-cont cl">
+   <div style="margin-bottom:20px"><img src="images/mei1.jpg"/></div>
+   <div class="mei-cont">
+     <div class="mei-img"><img src="images/index_12.png" /><p><strong>马卡龙</strong></p></div>
+     <div class="mei-p">马卡龙，又称作玛卡龙、法式小圆饼，是一种用蛋白、杏仁粉、白砂糖和糖霜制作，并夹有水果酱或奶油的法式甜点。口感丰富，外脆内柔，外观五彩缤纷，精致小巧。<br />
+Macaron一词本是法语，实际发音较接近"马卡红"。"马卡龙"是使用英语发音音译的结果。<br />
+相传，早期一些素食修女，制作出用鸡蛋清和杏仁粉烘制的蛋白杏仁饼代替荤食，这便是马卡龙的雏形。如今马卡龙的英文Macaron就源于意大利语Maccarone（杏仁酱）。<br /> 
+法国大革命期间，天主教受到革命党人打压，神职人员境况不佳。修女们为了生计，偷偷贩卖她们的蛋白杏仁饼，渐渐把蛋白杏仁饼传到了法国。<br />
+<p style="margin-left:20px;"><img src="images/s05.jpg" width="420" height="334" /></p>
+</div>
+     </div>
+   
+   </div>
+</div>
+<div class="footer-bottom">s
+ <div class="footer">欢迎来到美食的天地</div>
+</div>
+		</body>
+</html>

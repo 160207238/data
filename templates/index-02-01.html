@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script language="javascript" type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<script language="javascript" type="text/javascript" src="js/lrtk.js"></script>
+<title>美食</title>
+<script type="text/javascript">
+	function showtime(){
+		d=new Date();
+		/*t=document.getElementsByName("mytime");
+		t[0].value=d.toLocaleString();    */
+		t=document.getElementById("mytime1");
+		t.innerHTML=d.toLocaleString(); 
+		x=setTimeout("showtime()",1000);
+	}
+	function stoptime(){
+		clearTimeout(x);
+	}
+</script>
+</head>
+<body onload="showtime()">
+<div class="top">
+  <div class="header cl">
+    <div style="position:relative; float:left">
+    <h1 id="mytime1" ></h1></div>
+    <div class="logo"><img src="images/logo.png"/></div>
+    <ul id="nav" class="nav">
+    <li class="mainlevel"><a href="index.html">首页</a></li>
+      <li class="mainlevel"><a class="hover" href="index-01.html">简介</a></li>
+    <li class="mainlevel" id="mainlevel_01"><a>文物藏品</a>
+    <ul class="sub_nav_01">
+      <li><a href="index-02-01.html">一级文物</a></li>
+      <li><a href="index-02-02.html">二级文物</a></li>
+      <li><a href="index-02-03.html">三级文物</a></li>
+      </ul>
+    </li>
+        
+    <li class="mainlevel" id="mainlevel_02"><a>文物史迹</a>
+    <ul class="sub_nav_01">
+      <li><a href="index-03-01.html">国家重点</a></li>
+      <li><a href="index-03-02.html">省重点</a></li>
+      <li><a href="index-03-03.html">县重点</a></li>
+      </ul>
+    </li>
+    
+    <li class="mainlevel"><a href="index-04.html">我要留言</a>
+    </li>
+</ul>
+  </div>
+</div>
+ <div class="jing">
+   <div class="jing-cont">
+   <h4 style="color:#000">寿司</h4>
+   <img src="images/h2-img01-img.jpg"/>
+   <p class="other-p"><b>起源</b>　　寿司起源于中国东汉末年，即公元220年左右。东汉末年，战乱四起，百姓流离失所，为了逃荒，方便携带发明了寿司，后来也成为了一种主食，唐朝时候，赌徒为了不粘手，方便携带，卷寿司的时候用紫菜包在外面，就发展成现在的样子，后来寿司传到日本，就慢慢的演变成了日本美食，连国人也以为那是洋食品。   </p>
+   <p style="margin-left:20px;"><img src="images/s01.jpg" width="949" height="456" /></p>
+   </div>
+</div>
+<div class="footer-bottom">
+ <div class="footer">欢迎来到美食的天地</div>
+</div>
+		</body>
+</html>
