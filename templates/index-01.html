@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-<script language="javascript" type="text/javascript" src="js/jquery-1.4.2.js"></script>
-<script language="javascript" type="text/javascript" src="js/lrtk.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= './css/style.css')}}"/>
+<script language="javascript" type="text/javascript" src="{{ url_for('static', filename= './js/jquery-1.4.2.js')}}"></script>
+<script language="javascript" type="text/javascript" src="{{ url_for('static', filename= './js/lrtk.js')}}"></script>
 <title>美食</title>
 <script type="text/javascript">
 	function showtime(){
@@ -25,27 +25,27 @@
   <div class="header cl">
     <div style="position:relative; float:left">
     <h1 id="mytime1" ></h1></div>
-    <div class="logo"><img src="images/logo.png"/></div>
+    <div class="logo"><img src="{{ url_for('static', filename= './images/logo.png')}}"/></div>
     <ul id="nav" class="nav">
-    <li class="mainlevel"><a href="index.html">首页</a></li>
-    <li class="mainlevel"><a class="hover" href="index-01.html">简介</a></li>
+    <li class="mainlevel"><a href="index">首页</a></li>
+    <li class="mainlevel"><a href="index-01">简介</a></li>
     <li class="mainlevel" id="mainlevel_01"><a>文物藏品</a>
     <ul class="sub_nav_01">
-      <li><a href="index-02-01.html">一级文物</a></li>
-      <li><a href="index-02-02.html">二级文物</a></li>
-      <li><a href="index-02-03.html">三级文物</a></li>
+      <li><a href="index-02-01">一级文物</a></li>
+      <li><a href="index-02-02">二级文物</a></li>
+      <li><a href="index-02-03">三级文物</a></li>
       </ul>
     </li>
         
     <li class="mainlevel" id="mainlevel_02"><a>文物史迹</a>
     <ul class="sub_nav_01">
-      <li><a href="index-03-01.html">国家重点</a></li>
-      <li><a href="index-03-02.html">省重点</a></li>
-      <li><a href="index-03-03.html">县重点</a></li>
+      <li><a href="index-03-01">国家重点</a></li>
+      <li><a href="index-03-02">省重点</a></li>
+      <li><a href="index-03-03">县重点</a></li>
       </ul>
     </li>
     
-    <li class="mainlevel"><a href="index-04.html">我要留言</a>
+    <li class="mainlevel"><a href="index-04">我要留言</a>
     </li>
 </ul>
   </div>
@@ -55,15 +55,18 @@
   <div class="cont">
   <div class="cont-main">
     <div class="mould">
-    <h3>美食简介</h3>
-    <p class="h2-p">　　美食，顾名思义就是美味的食物，贵的有山珍海味，便宜的有街边小吃。其实美食是不分贵贱的，只要是自己喜欢的，都可以称之为美食。中国素有"烹饪王国"这个美誉。在中国这个大家庭里，我们有五十六个小家庭，每个家庭都有自己的特色美食。美食吃前有期待、吃后有回味的东西。美食遭遇心情的时候，美食已不仅仅是简单的味觉感受，更是一种精神享受。也是一种场合。场合好吃起来也有味道、人人都想吃上自己喜欢的。世界各地美食文化博大精深，营养物质各不相同，品味更多美食，享受更多健康。<br />
+    <h3>文物简介</h3>
+    <p class="h2-p">　　文物是人类在社会活动中遗留下来的具有历史、艺术、科学价值的遗物和遗迹。它是人类宝贵的历史文化遗产。
+文物是指具体的物质遗存，它的基本特征是：第一，必须是由人类创造的，或者是与人类活动有关的；第二，必须是已经成为历史的过去，不可能再重新创造的。目前，各个国家对文物的称谓并不一致，其所指涵义和范围也不尽相同，因而迄今尚未形成一个对文物共同确认的统一定义<br />
 　　公元5世纪后期，罗马人日渐式微，普罗旺斯受到来自日耳曼部落的攻击。自7世纪起，受到来自北非的阿拉伯人进攻。中世纪时，普罗旺斯反复遭受周边势力的争夺，包括来自巴塞罗那的加泰罗尼亚人、勃艮第、神圣罗马帝国、诺曼人和法国的瓦鲁瓦王朝。14世纪时，教皇克莱芒五世搬到普罗旺斯的阿维翁。由于亲缘关系的原因，普罗旺斯在1481年正式成为法国的一部分，法国国王路易十一世成为普罗旺斯的统治者。</p>
   </div>
   <div class="mould" style="margin-top:15px">
-    <h3 style="color:#FFF">美食档案</h3>
-    <p class="h2-p" style="color:#FFF"><b>美食不仅仅是餐桌上的食物，休闲零食，各种饼干、糕点、糖类等制品，众口难调，各有各的风味，从味觉到视觉的享受，都称之为美食！</b>
-      在中国传统文化教育中的阴阳五行哲学思想、儒家伦理道德观念、中医营养养生学说，还有文化艺术成就、饮食审美风尚、民族性格特征诸多因素的影响下，创造出彪炳史册的中国烹饪技艺，形成博大精深的中国饮食文化。<br /> <br /> 
-      <span class="h2-p" style="color:#FFF"><img src="images/index_03.png" width="940" height="416" /></span><br />
+    <h3 style="color:#FFF">价值分类法</h3>
+<p class="h2-p" style="color:#FFF">价值分类法，是以文物的价值为标准，对文物进行分类的方法。文物有历史、艺术、科学价值。没有价值的历史遗迹和遗物不是文物。按照文物价值分类，主要是根据文物价值的高低来区分。至于价值高低的确认，需经鉴定。<br />
+根据我国文物法规，对文物价值高低的区分，采取两种办法。
+<br /> 其一、对文物史迹，即古建筑、石窟寺、石刻、古遗址、古墓葬、纪念遗址或建筑等，依据其价值的高低，分为三级，即全国重点文物保护单位和省、市、自治区文物保护单位，县（市）级文物保护单位。
+<br /> 其二、对文物藏品，如陶瓷器、青铜器、铁器、玉器、漆器、书画等等，依其价值高低，也分为三级，即一级文物、二级文物、三级文物。<br /> <br />
+  <span class="h2-p" style="color:#FFF"><img src="{{ url_for('static', filename= './images/index_03.png')}}" width="940" height="416" /></span><br />
     </p>
   </div>
   </div>
@@ -72,7 +75,7 @@
  
 </div>
 <div class="footer-bottom">
- <div class="footer">欢迎来到美食的天地</div>
+ <div class="footer">欢迎来到文物的天地</div>
 </div>
 	</body>
 </html>

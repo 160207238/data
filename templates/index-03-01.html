@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-<script language="javascript" type="text/javascript" src="js/jquery-1.4.2.js"></script>
-<script language="javascript" type="text/javascript" src="js/lrtk.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= './css/style.css')}}"/>
+<script language="javascript" type="text/javascript" src="{{ url_for('static', filename= './js/jquery-1.4.2.js')}}"></script>
+<script language="javascript" type="text/javascript" src="{{ url_for('static', filename= './js/lrtk.js')}}"></script>
 <title>特色美食</title>
 <script type="text/javascript">
 	function showtime(){
@@ -25,27 +25,27 @@
   <div class="header cl">
     <div style="position:relative; float:left">
     <h1 id="mytime1" ></h1></div>
-    <div class="logo"><img src="images/logo.png"/></div>
+    <div class="logo"><img src="{{ url_for('static', filename= './images/logo.png')}}"/></div>
     <ul id="nav" class="nav">
-    <li class="mainlevel"><a href="index.html">首页</a></li>
-    <li class="mainlevel"><a class="hover" href="index-01.html">简介</a></li>
+    <li class="mainlevel"><a href="index">首页</a></li>
+    <li class="mainlevel"><a href="index-01">简介</a></li>
     <li class="mainlevel" id="mainlevel_01"><a>文物藏品</a>
     <ul class="sub_nav_01">
-      <li><a href="index-02-01.html">一级文物</a></li>
-      <li><a href="index-02-02.html">二级文物</a></li>
-      <li><a href="index-02-03.html">三级文物</a></li>
+      <li><a href="index-02-01">一级文物</a></li>
+      <li><a href="index-02-02">二级文物</a></li>
+      <li><a href="index-02-03">三级文物</a></li>
       </ul>
     </li>
         
     <li class="mainlevel" id="mainlevel_02"><a>文物史迹</a>
     <ul class="sub_nav_01">
-      <li><a href="index-03-01.html">国家重点</a></li>
-      <li><a href="index-03-02.html">省重点</a></li>
-      <li><a href="index-03-03.html">县重点</a></li>
+      <li><a href="index-03-01">国家重点</a></li>
+      <li><a href="index-03-02">省重点</a></li>
+      <li><a href="index-03-03">县重点</a></li>
       </ul>
     </li>
     
-    <li class="mainlevel"><a href="index-04.html">我要留言</a>
+    <li class="mainlevel"><a href="index-04">我要留言</a>
     </li>
 </ul>
 
@@ -54,20 +54,20 @@
  
  <div class="jing">
    <div class="jing-cont cl">
-   <div style="margin-bottom:20px"><img src="images/mei.jpg"/></div>
+   <div style="margin-bottom:20px"><img src="{{ url_for('static', filename= './images/mei.jpg')}}"/></div>
    <div class="mei-cont">
-     <div class="mei-img"><img src="images/index_11.png"/><p><strong>曲奇饼干</strong></p></div>
-     <div class="mei-p">曲奇饼干原来是一种高糖、高油脂的食品。随着人们生活水平的提高。高脂肪高油食品摄入过多，而膳食纤维的摄入量日渐减少，食用曲奇饼干会使得"文明病"的发病率日渐提高。因此开发具有膳食纤维在曲奇饼，具有十分积极的意义。<br />
-曲奇，来源于英语COOKIES的香港音译，意为"细小的蛋糕"最初由伊朗发明，上世纪80年代，曲奇由欧美传入中国，并在21世纪初在香港、澳门、台湾等地掀起热潮，随之不断流行开来。<br />
-在欧美，过节时，为了向爱人和朋友表示心意和尊敬，女孩子会前往曲奇作坊，在导师的督导下，亲自烘焙味道诱人的曲奇送给他们。但在中国，情况有了变化，人们选择在网上订购一些曲奇，配上精美的包装送给另一半。<br />
-<p style="margin-left:20px;"><img src="images/s04.jpeg" width="585" height="380" /></p>
+     <div class="mei-img"><img src="{{ url_for('static', filename= './images/index_11.png')}}"/></div>
+     <div class="mei-p">全国重点文物保护单位，是由中华人民共和国国务院所属的文物行政部门，国家文物局对不可移动文物所核定的最高保护级别。<br />
+截至2019年10月16日，国务院已公布八批全国重点文物保护单位，总数为5058处。<br />
+划分种类有革命遗址、石窟寺遗址、古建筑遗址、石刻碑遗址、古时代遗址等。<br />
+       <p style="margin-left:20px;"><img src="{{ url_for('static', filename= './images/s04.jpg')}}" width="585" height="380" /></p>
 </div>
      </div>
    
    </div>
 </div>
 <div class="footer-bottom">s
- <div class="footer">欢迎来到美食的天地</div>
+ <div class="footer">欢迎来到文物的天地</div>
 </div>
 		</body>
 </html>

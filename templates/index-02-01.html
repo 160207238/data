@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-<script language="javascript" type="text/javascript" src="js/jquery-1.4.2.js"></script>
-<script language="javascript" type="text/javascript" src="js/lrtk.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= './css/style.css')}}"/>
+<script language="javascript" type="text/javascript" src="{{ url_for('static', filename= './js/jquery-1.4.2.js')}}"></script>
+<script language="javascript" type="text/javascript" src="{{ url_for('static', filename= './js/lrtk.js')}}"></script>
 <title>美食</title>
 <script type="text/javascript">
 	function showtime(){
@@ -25,41 +25,57 @@
   <div class="header cl">
     <div style="position:relative; float:left">
     <h1 id="mytime1" ></h1></div>
-    <div class="logo"><img src="images/logo.png"/></div>
+    <div class="logo"><img src="{{ url_for('static', filename= './images/logo.png')}}"/></div>
     <ul id="nav" class="nav">
-    <li class="mainlevel"><a href="index.html">首页</a></li>
-      <li class="mainlevel"><a class="hover" href="index-01.html">简介</a></li>
+    <li class="mainlevel"><a href="index">首页</a></li>
+      <li class="mainlevel"><a href="index-01">简介</a></li>
     <li class="mainlevel" id="mainlevel_01"><a>文物藏品</a>
     <ul class="sub_nav_01">
-      <li><a href="index-02-01.html">一级文物</a></li>
-      <li><a href="index-02-02.html">二级文物</a></li>
-      <li><a href="index-02-03.html">三级文物</a></li>
+      <li><a href="index-02-01">一级文物</a></li>
+      <li><a href="index-02-02">二级文物</a></li>
+      <li><a href="index-02-03">三级文物</a></li>
       </ul>
     </li>
         
     <li class="mainlevel" id="mainlevel_02"><a>文物史迹</a>
     <ul class="sub_nav_01">
-      <li><a href="index-03-01.html">国家重点</a></li>
-      <li><a href="index-03-02.html">省重点</a></li>
-      <li><a href="index-03-03.html">县重点</a></li>
+      <li><a href="index-03-01">国家重点</a></li>
+      <li><a href="index-03-02">省重点</a></li>
+      <li><a href="index-03-03">县重点</a></li>
       </ul>
     </li>
     
-    <li class="mainlevel"><a href="index-04.html">我要留言</a>
+    <li class="mainlevel"><a href="index-04">我要留言</a>
     </li>
 </ul>
   </div>
 </div>
  <div class="jing">
    <div class="jing-cont">
-   <h4 style="color:#000">寿司</h4>
-   <img src="images/h2-img01-img.jpg"/>
-   <p class="other-p"><b>起源</b>　　寿司起源于中国东汉末年，即公元220年左右。东汉末年，战乱四起，百姓流离失所，为了逃荒，方便携带发明了寿司，后来也成为了一种主食，唐朝时候，赌徒为了不粘手，方便携带，卷寿司的时候用紫菜包在外面，就发展成现在的样子，后来寿司传到日本，就慢慢的演变成了日本美食，连国人也以为那是洋食品。   </p>
-   <p style="margin-left:20px;"><img src="images/s01.jpg" width="949" height="456" /></p>
+   <h4 style="color:#000">一级文物</h4>
+   <img src="{{ url_for('static', filename= './images/h2-img01-img.jpg')}}"/>
+   <p class="other-p">文物中具有特别重要历史、艺术、科学价值的代表性文物为一级文物。
+	   <b>一级文物定级标准</b>　　（一）反映中国各个历史时期的生产关系及其经济制度、政治制度，以及有关社会历史发展的特别重要的代表性文物；
+（二）反映历代生产力的发展、生产技术的进步和科学发明创造的特别重要的代表性文物；
+（三）反映各民族社会历史发展和促进民族团结、维护祖国统一的特别重要的代表性文物；
+（四）反映历代劳动人民反抗剥削、压迫和著名起义领袖的特别重要的代表性文物；
+（五）反映历代中外关系和在政治、经济、军事、科技、教育、文化、艺术、宗教、卫生、体育等方面相互交流的特别重要的代表性文物；
+（六）反映中华民族抗御外侮，反抗侵略的历史事件和重要历史人物的特别重要的代表性文物；
+（七）反映历代著名的思想家、政治家、军事家、科学家、发明家、教育家、文学家、艺术家等特别重要的代表性文物，著名工匠的特别重要的代表性作品；
+（八）反映各民族生活习俗、文化艺术、工艺美术、宗教信仰的具有特别重要价值的代表性文物；
+（九）中国古旧图书中具有特别重要价值的代表性的善本；
+（十）反映有关国际共产主义运动中的重大事件和杰出领袖人物的革命实践活动，以及为中国革命做出重大贡献的国际主义战士的特别重要的代表性文物；
+（十一）与中国近代（1840－1949）历史上的重大事件、重要人物、著名烈士、著名英雄模范有关的特别重要的代表性文物；
+（十二）与中华人民共和国成立以来的重大历史事件、重大建设成就、重要领袖人物、著名烈士、著名英雄模范有关的特别重要的代表性文物；
+（十三）与中国共产党和近代其他各党派、团体的重大事件，重要人物、爱国侨胞及其他社会知名人士有关的特别重要的代表性文物；
+（十四）其他具有特别重要历史、艺术、科学价值的代表性文物。
+
+	         </p>
+     <p style="margin-left:20px;"><img src="{{ url_for('static', filename= './images/s01.jpg')}}" width="949" height="456" /></p>
    </div>
 </div>
 <div class="footer-bottom">
- <div class="footer">欢迎来到美食的天地</div>
+ <div class="footer">欢迎来到文物的天地</div>
 </div>
 		</body>
 </html>

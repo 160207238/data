@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-<script language="javascript" type="text/javascript" src="js/jquery-1.4.2.js"></script>
-<script language="javascript" type="text/javascript" src="js/lrtk.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= './css/style.css')}}"/>
+<script language="javascript" type="text/javascript" src="{{ url_for('static', filename= './js/jquery-1.4.2.js')}}"></script>
+<script language="javascript" type="text/javascript" src="{{ url_for('static', filename= './js/lrtk.js')}}"></script>
 <title>美食</title>
 <script type="text/javascript">
 	function showtime(){
@@ -25,44 +25,57 @@
   <div class="header cl">
     <div style="position:relative; float:left">
     <h1 id="mytime1" ></h1></div>
-    <div class="logo"><img src="images/logo.png"/></div>
+    <div class="logo"><img src="{{ url_for('static', filename= './images/logo.png')}}"/></div>
     <ul id="nav" class="nav">
-    <li class="mainlevel"><a href="index.html">首页</a></li>
-       <li class="mainlevel"><a class="hover" href="index-01.html">简介</a></li>
+    <li class="mainlevel"><a href="index">首页</a></li>
+       <li class="mainlevel"><a href="index-01">简介</a></li>
     <li class="mainlevel" id="mainlevel_01"><a>文物藏品</a>
     <ul class="sub_nav_01">
-      <li><a href="index-02-01.html">一级文物</a></li>
-      <li><a href="index-02-02.html">二级文物</a></li>
-      <li><a href="index-02-03.html">三级文物</a></li>
+      <li><a href="index-02-01">一级文物</a></li>
+      <li><a href="index-02-02">二级文物</a></li>
+      <li><a href="index-02-03">三级文物</a></li>
       </ul>
     </li>
         
     <li class="mainlevel" id="mainlevel_02"><a>文物史迹</a>
     <ul class="sub_nav_01">
-      <li><a href="index-03-01.html">国家重点</a></li>
-      <li><a href="index-03-02.html">省重点</a></li>
-      <li><a href="index-03-03.html">县重点</a></li>
+      <li><a href="index-03-01">国家重点</a></li>
+      <li><a href="index-03-02">省重点</a></li>
+      <li><a href="index-03-03">县重点</a></li>
       </ul>
     </li>
     
-    <li class="mainlevel"><a href="index-04.html">我要留言</a>
+    <li class="mainlevel"><a href="index-04">我要留言</a>
     </li>
 </ul>
   </div>
 </div>
  <div class="jing">
    <div class="jing-cont">
-   <h4 style="color:#000">面包</h4>
-   <img src="images/h2-img02-img.jpg"/>
-   <p class="other-p"><b>简介</b>　面包，也写作麺包，是一种用五谷（一般是麦类）磨粉制作并加热而制成的食品。以小麦粉为主要原料，以酵母、鸡蛋、油脂、糖、盐等为辅料，加水调制成面团，经过发酵、分割、成形、醒发、焙烤、冷却等过程加工而成的焙烤食品。</p> 
-<p style="margin-left:20px;"><img src="images/s03.jpg" width="600" height="390" /></p>
+   <h4 style="color:#000">三级文物</h4>
+   <img src="{{ url_for('static', filename= './images/h2-img02-img.jpg')}}"/>
+<p class="other-p">文物中具有较为重要历史、艺术、科学价值的文物为三级文物。
+	   <b>三级文物定级标准</b>　　（一）反映中国各个历史时期的生产力和生产关系及其经济制度、政治制度，以及有关社会历史发展的比较重要的文物；
+（二）反映一个地区、一个民族或某一时代的具有比较重要价值的文物；
+（三）反映某一历史事件或人物，对研究某一历史问题有比较重要价值的文物；
+（四）反映某种考古学文化类型和文化特征的具有比较重要价值的文物；
+（五）具有比较重要价值的民族、民俗文物；
+（六）某一历史时期艺术水平和工艺水平较高，但有损伤的作品；
+（七）古旧图书中具有比较重要价值的善本；
+（八）反映中国近代（1840－1949）历史上的重大事件、重要人物、著名烈士、著名英雄模范的具有比较重要价值的文物；
+（九）反映中华人民共和国成立以来的重大历史事件、重大建设成就、重要领袖人物、著名烈士、著名英雄模范的具有比较重要价值的文物；
+（十）反映中国共产党和近代其他各党派、团体的重大事件，重要人物、爱国侨胞及其他社会知名人士的具有比较重要价值的文物；
+（十一）其它具有比较重要的历史、艺术、科学价值的文物。
+
+	         </p>
+     <p style="margin-left:20px;"><img src="{{ url_for('static', filename= './images/s03.jpg')}}" width="600" height="390" /></p>
 
      
     
  </div>
 </div>
 <div class="footer-bottom">
- <div class="footer">欢迎来到美食的天地</div>
+ <div class="footer">欢迎来到文物的天地</div>
 </div>
 		</body>
 </html>
